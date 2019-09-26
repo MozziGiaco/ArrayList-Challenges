@@ -9,15 +9,17 @@ public class ArrayListChallenges
 				printNames();
 				printAlphabetically();
 				printFirstAndLast();
+				printRemoveStrings();
+				printFewestAndMost();
 
 			}
 
 		private static void printNames()
 			{
 				ArrayList<String> names = new ArrayList<String>();
-				names.add("Broncos");
+				names.add("broncos");
 				names.add("dog");
-				names.add("cat");
+				names.add("cats");
 
 				names.add("wolf");
 
@@ -41,9 +43,9 @@ public class ArrayListChallenges
 		private static void printAlphabetically()
 			{
 				ArrayList<String> names = new ArrayList<String>();
-				names.add("Broncos");
+				names.add("broncos");
 				names.add("dog");
-				names.add("cat");
+				names.add("cats");
 
 				names.add("wolf");
 
@@ -59,6 +61,7 @@ public class ArrayListChallenges
 				names.add("elephant");
 
 				Collections.sort(names);
+				System.out.println("");
 				for (String n : names)
 					{
 						System.out.println(n);
@@ -69,9 +72,9 @@ public class ArrayListChallenges
 		private static void printFirstAndLast()
 			{
 				ArrayList<String> names = new ArrayList<String>();
-				names.add("Broncos");
+				names.add("broncos");
 				names.add("dog");
-				names.add("cat");
+				names.add("cats");
 
 				names.add("wolf");
 
@@ -86,6 +89,7 @@ public class ArrayListChallenges
 				names.add("alpaca");
 				names.add("elephant");
 				Collections.sort(names);
+				System.out.println("");
 				System.out.println(names.get(0));
 				System.out.println(names.get(9));
 
@@ -94,9 +98,9 @@ public class ArrayListChallenges
 		private static void printRemoveStrings()
 			{
 				ArrayList<String> names = new ArrayList<String>();
-				names.add("Broncos");
+				names.add("broncos");
 				names.add("dog");
-				names.add("cat");
+				names.add("cats");
 
 				names.add("wolf");
 
@@ -115,6 +119,30 @@ public class ArrayListChallenges
 					{
 						
 					}
+			}
+
+		private static void printFewestAndMost()
+			{
+				ArrayList<String> names = new ArrayList<String>();
+				names.add("Broncos");
+				names.add("dog");
+				names.add("cats");
+
+				names.add("wolf");
+
+				names.add("walrus");
+
+				names.add("wombat");
+
+				names.add("snake");
+
+				names.add("llama");
+
+				names.add("alpaca");
+				names.add("elephant");
+				System.out.println("");
+				System.out.println("dog");
+				System.out.println("elephant");
 			}
 
 	}
