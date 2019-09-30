@@ -42,6 +42,7 @@ public class ArrayListChallenges
 
 		private static void printAlphabetically()
 			{
+				System.out.println("");
 				ArrayList<String> names = new ArrayList<String>();
 				names.add("broncos");
 				names.add("dog");
@@ -71,6 +72,7 @@ public class ArrayListChallenges
 
 		private static void printFirstAndLast()
 			{
+				System.out.println("");
 				ArrayList<String> names = new ArrayList<String>();
 				names.add("broncos");
 				names.add("dog");
@@ -97,6 +99,7 @@ public class ArrayListChallenges
 
 		private static void printRemoveStrings()
 			{
+				System.out.println("");
 				ArrayList<String> names = new ArrayList<String>();
 				names.add("broncos");
 				names.add("dog");
@@ -115,14 +118,20 @@ public class ArrayListChallenges
 				names.add("alpaca");
 				names.add("elephant");
 
-				for (int i = 0; i < names.size(); i++)
+				names.remove("wolf");
+				names.remove("walrus");
+
+				names.remove("wombat");
+				for (String n : names)
 					{
-						
+						System.out.println(n);
 					}
+
 			}
 
 		private static void printFewestAndMost()
 			{
+				System.out.println("");
 				ArrayList<String> names = new ArrayList<String>();
 				names.add("Broncos");
 				names.add("dog");
